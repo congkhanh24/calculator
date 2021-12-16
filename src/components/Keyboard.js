@@ -75,9 +75,7 @@ const Item = ({number, onPress}) => {
 };
 
 const Keyboard = () => {
-  const renderItem = ({item}) => (
-    <Item onPress={() => handleMath(item)} number={item.number} />
-  );
+  const renderItem = ({item}) => <Item number={item.number} />;
   return (
     <View style={styles.container}>
       <FlatList
